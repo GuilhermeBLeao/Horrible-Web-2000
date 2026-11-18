@@ -1,0 +1,155 @@
+/* =====================================
+   ANIMAÇÕES INÚTEIS
+   ===================================== */
+
+@keyframes piscar {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.aviso-superior {
+    animation: piscar 1s infinite;
+}
+
+.aviso-construcao {
+    animation: piscar 2s infinite;
+}
+
+.texto-destaque {
+    animation: piscar 0.8s infinite;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#contadorVisitantes {
+    display: inline-block;
+    animation: girar 5s linear infinite;
+}
+
+/* =====================================
+   ANIMAÇÕES INÚTEIS - NÍVEL AVANÇADO
+   ===================================== */
+
+/* Texto balançando sem necessidade */
+@keyframes balancar {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.titulo-principal {
+    display: inline-block;
+    animation: balancar 2s infinite;
+}
+
+/* Botão que parece estar tendo uma crise */
+@keyframes botaoLouco {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.botao-caotico:hover {
+    animation: botaoLouco 0.3s infinite;
+}
+
+/* Fundo mudando de cor sem motivo */
+@keyframes fundoColorido {
+    0% {
+        background-color: yellow;
+    }
+
+    25% {
+        background-color: magenta;
+    }
+
+    50% {
+        background-color: cyan;
+    }
+
+    75% {
+        background-color: lime;
+    }
+
+    100% {
+        background-color: yellow;
+    }
+}
+
+.aviso {
+    animation: fundoColorido 4s infinite;
+}
+
+/* Menu pulando */
+@keyframes menuPulando {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.menu {
+    animation: menuPulando 1.5s infinite;
+}
+
+/* =====================================
+   ACESSIBILIDADE - REDUÇÃO DE MOVIMENTO
+   ===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}

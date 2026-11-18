@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cadastro - Horrible Web 2000</title>
+        <img
+            src="../assets/images/batata.png"
+            alt="Batata sorridente usando óculos escuros"
+            class="imagem-decorativa"
+        />
+        <!-- PROMOÇÃO INÚTIL -->
+         <img src="../assets/gifs/promocao.gif" alt="Promoção animada" class="gif-decorativo"
+
+        <!-- Folhas de estilo -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/chaos.css" />
+        <link rel="stylesheet" href="../css/animations.css" />
+
+        <!-- JavaScript -->
+        <script src="../js/formulario.js" defer></script>
+        <script src="../js/efeitos.js" defer></script>
+    </head>
+    <body>
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+            <div class="aviso-superior">
+                ATENÇÃO! CADASTRAR-SE PODE CAUSAR CONFUSÃO!
+            </div>
+            <h1 class="titulo-principal">CADASTRO HORRIBLE WEB 2000</h1>
+            <p class="subtitulo">
+                Preencha tudo. Ou não. Nós também não sabemos.
+            </p>
+            <div class="aviso-construcao">
+                SISTEMA DE CADASTRO EM CONSTRUÇÃO DESDE 1998!
+            </div>
+        </header>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="menu">
+            <a href="../index.html">INÍCIO</a>
+            <a href="cadastro.html">CADASTRO</a>
+            <a href="loja.html">LOJA</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo-principal">
+            <section class="apresentacao">
+                <h2>FORMULÁRIO OFICIAL DE CADASTRAMENTO</h2>
+                <p>
+                    Seja bem-vindo ao nosso sistema de cadastro! Não garantimos
+                    que suas respostas façam sentido.
+                </p>
+                <p class="texto-destaque">
+                    PREENCHA COM RESPONSABILIDADE IRRESPONSÁVEL!
+                </p>
+            </section>
+
+            <!-- FORMULÁRIO -->
+            <section class="aviso">
+                <form id="formCadastro">
+                    <h2>1. INFORMAÇÕES IMPORTANTÍSSIMAS</h2>
+                    <label for="nome">
+                        Como você gostaria de ser chamado?
+                    </label>
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite um nome fictício"
+                        required
+                    />
+                    <br /><br />
+                    <label for="idade"
+                        >Quantos anos você tem? (A resposta não será
+                        armazenada)</label
+                    >
+                    <input
+                        type="number"
+                        id="idade"
+                        min="1"
+                        max="120"
+                        placeholder="EX. : 25"
+                        required
+                    />
+                    <br /><br />
+                    <label for="corFavorita">Qual a sua cor favorita?</label>
+                    <select id="corFavorita" required>
+                        <option value="">Escolha uma cor</option>
+                        <option value="azul">Azul invisível</option>
+                        <option value="vermelho">
+                            Vermelho radioativo (fictício)
+                        </option>
+                        <option value="verde">Verde de segunda-feira</option>
+                        <option value="rosa">Rosa burocrático</option>
+                        <option value="nenhuma">
+                            Nenhuma. Sou uma impressora.
+                        </option>
+                    </select>
+                    <br /><br />
+                    <h2>2. PERGUNTAS DE EXTREMA IMPORTÂNCIA</h2>
+                    <label for="animal"
+                        >Se você fosse um animal, qual seria?</label
+                    >
+                    <select id="animal" required>
+                        <option value="">Selecione seu animal</option>
+                        <option value="pinguim">Pinguim executivo</option>
+                        <option value="capivara">Capivara programadora</option>
+                        <option value="dinossauro">
+                            Dinossauro aposentado
+                        </option>
+                        <option value="batata">Batata com sentimentos</option>
+                    </select>
+                    <br /><br />
+                    <label
+                        >Você concorda que este formulário não faz
+                        sentido?</label
+                    >
+                    <br />
+                    <input type="radio" name="concorda" value="sim" required />
+                    Sim, infelizmente.
+                    <br />
+                    <input type="radio" name="concorda" value="nao" />
+                    Não, faz todo sentido.
+                    <br />
+                    <input type="radio" name="concorda" value="talvez" />
+                    Talvez, depende do clima.
+                    <br /><br />
+                    <h2>3. CONFIRMAÇÃO DESNECESSÁRIA</h2>
+                    <label for="confirmacao">
+                        Digite a palavra "ABACAXI" para confirmar que você NÃO é
+                        um abacaxi:
+                    </label>
+                    <input
+                        type="text"
+                        id="confirmacao"
+                        placeholder="Digite ABACAXI"
+                        required
+                    />
+                    <br /><br />
+                    <label
+                        >Marque esta caixa para confirmar que não leu os
+                        termos:</label
+                    >
+                    <br />
+                    <input type="checkbox" id="termos" />
+                    Não li, não entendi e provavelmente não concordo.
+                    <br /><br />
+                    <button type="submit" class="botao-caotico">
+                        FINALIZAR CADASTRO (TALVEZ)
+                    </button>
+                    <button type="reset" class="botao-caotico">
+                        APAGAR TUDO E ARREPENDER-SE
+                    </button>
+                </form>
+                <p id="mensagemCadastro"></p>
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer class="rodape">
+            <p class="rodape-final">
+                HORRIBLE WEB 2000 - SEUS DADOS NÃO NOS INTERESSAM!
+            </p>
+            <p>
+                Cadastro fictício. Nenhuma informação é enviada ou armazenada.
+            </p>
+        </footer>
+    </body>
+</html>

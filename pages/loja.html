@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loja - Horrible Web 2000</title>
+
+        <!-- Folhas de Estilo -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/chaos.css" />
+        <link rel="stylesheet" href="../css/animations.css" />
+
+        <!-- Arquivos JavaScript -->
+        <script src="../js/loja.js" defer></script>
+        <script src="../js/efeitos.js" defer></script>
+    </head>
+    <body>
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+            <div class="aviso-superior">
+                ATENÇÃO! AQUI VOCÊ COMPRA O QUE NÃO PRECISA!
+            </div>
+            <h1 class="titulo-principal">LOJA HORRIBLE WEB 2000</h1>
+            <p class="subtitulo">
+                Os piores produtos pelos melhores preços... ou não!
+            </p>
+            <div class="aviso-construcao">
+                NOSSA LOJA ESTÁ EM CONSTRUÇÃO DESDE 1998!
+            </div>
+        </header>
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="menu">
+            <a href="../index.html">INÍCIO</a>
+            <a href="cadastro.html">CADASTRO</a>
+            <a href="loja.html">LOJA</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo-principal">
+            <section class="apresentacao">
+                <h2>SEJA BEM-VINDO À NOSSA LOJA!</h2>
+                <p>
+                    Temos produtos que você nunca imaginou que existiam. E
+                    provavelmente nunca deveria ter imaginado.
+                </p>
+                <p class="texto-destaque">COMPRE AGORA! ARREPENDA-SE DEPOIS!</p>
+            </section>
+
+            <!-- CARRINHO FICTÍCIO -->
+            <section class="contador">
+                <h2>SEU CARRINHO DE COMPRAS</h2>
+                <p>
+                    Produtos adicionados:
+                    <span id="quantidadeCarrinho">0</span>
+                </p>
+                <p id="mensagemCarrinho">
+                    Seu carrinho está vazio. Que situação triste!
+                </p>
+                <button type="button" id="btnFinalizar" class="botao-caotico">
+                    FINALIZAR COMPRA
+                </button>
+            </section>
+            <!-- LISTA DE PRODUTOS -->
+            <section class="aviso">
+                <h2>NOSSOS PRODUTOS INCRÍVEIS</h2>
+                <article class="apresentacao">
+                    <h3>BATATA PREMIUM DIGITAL</h3>
+                    <img
+                        src="../assets/images/produto-01.png"
+                        alt="Batata digital usando óculos escuros"
+                        class="produto-imagem"
+                    />
+                    <p class="texto-destaque">
+                        Uma batata virtual de qualidade duvidosa. Não pode ser
+                        descascada, cozida ou consumida.
+                    </p>
+                    <p class="texto-destaque">R$999,99</p>
+                    <button
+                        type="button"
+                        class="botao-caotico btnComprar"
+                        data-produto="Batata premium digital"
+                    >
+                        COMPRAR BATATA
+                    </button>
+                </article>
+                <article class="apresentacao">
+                    <h3>POTE DE AR PREMIUM</h3>
+                    <img
+                        src="../assets/images/produto-02.png"
+                        alt="Pote de vidro contendo ar premium"
+                        class="produto-imagem"
+                    />
+                    <p>
+                        Um recipiente sofisticado contendo uma quantidade de ar
+                        que não podemos confirmar.
+                    </p>
+                    <p class="texto-destaque">R$4.500,00</p>
+                    <button
+                        type="button"
+                        class="botao-caotico btnComprar"
+                        data-produto="Pote de ar premium"
+                    >
+                        COMPRAR POTE DE AR
+                    </button>
+                </article>
+                <article class="apresentacao">
+                    <h3>BANANA INVISÍVEL</h3>
+                    <img
+                        src="../assets/images/produto-03.png"
+                        alt="Contorno pontilhado de uma banana invisível"
+                        class="produto-imagem"
+                    />
+                    <p>
+                        Uma banana tão especial que ninguém consegue enxergar.
+                        Pode estar madura. Pode não estar.
+                    </p>
+                    <p class="texto-destaque">R$100.000,00</p>
+                    <button
+                        type="button"
+                        class="botao-caotico btnComprar"
+                        data-produto="Banana invisível"
+                    >
+                        COMPRAR BANANA
+                    </button>
+                </article>
+                <article class="apresentacao">
+                    <h3>TIJOLO INTELIGENTE</h3>
+                    <img
+                        src="../assets/images/produto-04.png"
+                        alt="Tijolo vermelho inteligente"
+                        class="produto-imagem"
+                    />
+                    <p>
+                        Um tijolo revolucionário. Não pensa, não fala, mas custa
+                        muito caro.
+                    </p>
+                    <p class="texto-destaque">R$8.999,99</p>
+                    <button
+                        type="button"
+                        class="botao-caotico btnComprar"
+                        data-produto="Tijolo inteligente"
+                    >
+                        COMPRAR TIJOLO
+                    </button>
+                </article>
+            </section>
+
+            <!-- ÁREA DE MENSAGENS -->
+            <section class="ajuda">
+                <h2>COMUNICADO DA GERÊNCIA</h2>
+                <p id="mensagemLoja">
+                    A gerência não se responsabiliza por compras imaginárias.
+                </p>
+            </section>
+        </main>
+        <!-- RODAPÉ -->
+        <footer class="rodape">
+            <p class="rodape-final">
+                HORRIBLE WEB 2000 - A PIOR LOJA DA INTERNET!
+            </p>
+            <p>Nenhuma compra real é realizada nesta página</p>
+        </footer>
+    </body>
+</html>

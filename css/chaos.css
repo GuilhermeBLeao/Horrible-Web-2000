@@ -1,0 +1,115 @@
+/* =====================================
+   CAOS VISUAL
+   ===================================== */
+
+.cabecalho {
+    transform: rotate(-0.5deg);
+}
+
+.titulo-principal {
+    font-family: "Comic Sans MS", cursive;
+    text-shadow: 5px 5px red;
+}
+
+.subtitulo {
+    font-family: "Times New Roman", serif;
+    text-decoration: underline;
+}
+
+.menu a:nth-child(odd) {
+    font-family: "Courier New", monospace;
+}
+
+.menu a:nth-child(even) {
+    font-family: "Comic Sans MS", cursive;
+    font-style: italic;
+}
+
+.aviso {
+    transform: rotate(0.8deg);
+}
+
+.contador {
+    border: 10px double magenta;
+}
+
+.ajuda {
+    text-align: right;
+}
+
+.apresentacao h2 {
+    font-family: "Comic Sans MS", cursive;
+    font-size: 38px;
+}
+
+.rodape {
+    border: 8px groove lime;
+}
+
+/* =====================================
+   CAOS VISUAL - NIVEL AVANCADO
+   ===================================== */
+
+/* Links com aparência exagerada */
+
+.menu a:nth-child(1) {
+    font-size: 25px;
+    color: red;
+}
+
+.menu a:nth-child(3) {
+    transform: rotate(5deg);
+}
+
+.menu a:nth-child(5) {
+    background-color: yellow;
+    color: purple;
+    padding: 8px;
+}
+
+/* Apresentação completamente exagerada */
+
+.apresentacao h2 {
+    text-shadow: 4px 4px lime;
+    transform: rotate(-2deg);
+}
+
+.texto-destaque {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* Elementos com sombras absurdas */
+
+.contador {
+    box-shadow: 12px 12px 0 red;
+}
+
+.botao-caotico {
+    box-shadow: 8px 8px 0 blue;
+    transform: rotate(2deg);
+}
+
+/* Rodapé visualmente inconveniente */
+
+.rodape-final {
+    text-shadow: 3px 3px red;
+    letter-spacing: 4px;
+}
+
+/* Cores incompatíveis */
+
+.aviso h2 {
+    color: blue;
+    background-color: lime;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Links mudam de aparência ao passar o mouse */
+
+.menu a:hover {
+    background-color: red;
+    color: lime;
+    font-size: 28px;
+}

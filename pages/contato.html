@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato - Horrible Web 2000</title>
+
+        <!-- Folhas de estilo -->
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/chaos.css" />
+        <link rel="stylesheet" href="../css/animations.css" />
+
+        <!-- JavaScript -->
+        <script src="../js/contato.js" defer></script>
+        <script src="../js/efeitos.js" defer></script>
+    </head>
+
+    <body>
+        <!-- CABEÇALHO -->
+        <header class="cabecalho">
+            <div class="aviso-superior">
+                ATENÇÃO! NOSSO ATENDIMENTO NÃO GARANTE ATENDIMENTO!
+            </div>
+            <h1 class="titulo-principal">FALE CONOSCO</h1>
+            <p class="subtitulo">
+                Estamos sempre disponíveis. Menos quando precisamos.
+            </p>
+            <div class="aviso-construcao">
+                NOSSO SETOR DE ATENDIMENTO ESTÁ EM CONSTRUÇÃO!
+            </div>
+        </header>
+
+        <!-- MENU DE NAVEGAÇÃO -->
+        <nav class="menu">
+            <a href="../index.html">INÍCIO</a>
+            <a href="cadastro.html">CADASTRO</a>
+            <a href="loja.html">LOJA</a>
+            <a href="sobre.html">SOBRE</a>
+            <a href="contato.html">CONTATO</a>
+        </nav>
+
+        <!-- CONTEÚDO PRINCIPAL -->
+        <main class="conteudo-principal">
+            <!-- APRESENTAÇÃO -->
+            <section class="apresentacao">
+                <h2>PRECISA DE AJUDA?</h2>
+                <p>
+                    Está com problemas? Nós também! Entre em contato com nossa
+                    equipe altamente despreparada.
+                </p>
+                <p class="texto-destaque">
+                    SUA OPINIÃO NÃO MUDA ABSOLUTAMENTE NADA!
+                </p>
+            </section>
+
+            <!-- FORMULÁRIO DE CONTATO -->
+            <section class="aviso">
+                <h2>FORMULÁRIO DE CONTATO</h2>
+                <!-- ÍCONE DE E-MAIL -->
+                <img
+                    src="../assets/gifs/email.gif"
+                    alt="Envelope de e-mail animado"
+                    class="icone-contato"
+                />
+                <!-- SELO DE QUALIDADE -->
+                <img
+                    src="../assets/gifs/selo-inutil.gif"
+                    alt="Selo 100% inutil"
+                    class="selo-decorativo"
+                />
+                <form id="formContato">
+                    <label for="nomeContato">
+                        Como podemos chamar você? (Use um nome fictício)
+                    </label>
+                    <br />
+                    <input
+                        type="text"
+                        id="nomeContato"
+                        placeholder="Digite um nome fictício"
+                        required
+                    />
+                    <br /><br />
+                    <label for="assuntoContato">
+                        Qual é o motivo do seu desespero?
+                    </label>
+                    <br />
+                    <select id="assuntoContato" required>
+                        <option value="">Escolha seu problema</option>
+                        <option value="site">O site está horrível!</option>
+                        <option value="compra">
+                            Comprei uma batata e não recebi!
+                        </option>
+                        <option value="senha">
+                            Esqueci a senha que nunca criei!
+                        </option>
+                        <option value="duvida">
+                            Tenho uma dúvida sem resposta!
+                        </option>
+                        <option value="outro">
+                            Meu problema não está nesta lista!
+                        </option>
+                    </select>
+                    <br /><br />
+                    <label for="mensagemContato">
+                        Descreva seu problema (se conseguir):
+                    </label>
+                    <br />
+                    <textarea
+                        id="mensagemContato"
+                        rows="6"
+                        placeholder="Digite sua reclamação fictícia..."
+                        required
+                    ></textarea>
+                    <br /><br />
+                    <label> Como você avalia nosso atendimento? </label>
+                    <br />
+                    <input
+                        type="radio"
+                        name="avaliacao"
+                        value="otimo"
+                        required
+                    />
+                    Excelente, mesmo sem atendimento.
+                    <br />
+                    <input type="radio" name="avaliacao" value="ruim" />
+                    Péssimo, como esperado.
+                    <br />
+                    <input type="radio" name="avaliacao" value="impossivel" />
+                    Não sei, ainda não fui atendido.
+                    <br /><br />
+                    <button type="submit" class="botao-caotico">
+                        ENVIAR MENSAGEM (TALVEZ)
+                    </button>
+                    <button type="reset" class="botao-caotico">
+                        APAGAR MINHAS RECLAMAÇÕES
+                    </button>
+                </form>
+                <p id="respostaContato"></p>
+            </section>
+
+            <!-- INFORMAÇÕES ABSURDAS -->
+            <section class="ajuda">
+                <h2>HORÁRIO DE ATENDIMENTO</h2>
+                <p>Segunda-feira: talvez.</p>
+                <p>Terça-feira: depende do gerente.</p>
+                <p>Quarta-feira: horário comercial imaginário.</p>
+                <p>Quinta-feira: estamos pensando.</p>
+                <p>Sexta-feira: já estamos de folga.</p>
+                <p>Sábados, domingos e feriados: absolutamente não.</p>
+            </section>
+
+            <!-- AVISO FINAL -->
+            <section class="contador">
+                <h2>AVISO IMPORTANTE</h2>
+                <p>
+                    Nenhuma mensagem será enviada para nossos funcionários. Eles
+                    provavelmente nem existem.
+                </p>
+            </section>
+        </main>
+
+        <!-- RODAPÉ -->
+        <footer class="rodape">
+            <p class="rodape-final">
+                HORRIBLE WEB 2000 - ENTRE EM CONTATO POR SUA CONTA E RISCO!
+            </p>
+            <p>Atendimento fictício. Nenhuma informação será transmitida.</p>
+        </footer>
+    </body>
+</html>

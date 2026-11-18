@@ -1,0 +1,318 @@
+/*========================
+    HORRIBLE WEB 2000
+    ESTILIZAÇÃO PRINCIPAL
+========================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    background-color: #00ff00;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.cabecalho {
+    background-color: #ff00ff;
+    padding: 20px;
+    text-align: center;
+    border: 8px ridge yellow;
+}
+
+.titulo-principal {
+    font-size: 55px;
+    color: yellow;
+}
+
+.subtitulo {
+    font-size: 28px;
+    color: blue;
+}
+
+.slogan {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.aviso-superior {
+    background-color: red;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+}
+
+.aviso-construcao {
+    background-color: yellow;
+    color: red;
+    padding: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.menu {
+    background-color: blue;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.menu a {
+    display: inline-block;
+    color: yellow;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.conteudo-principal {
+    margin-top: 20px;
+}
+
+.apresentacao,
+.contador,
+.aviso,
+.ajuda {
+    padding: 25px;
+    margin-bottom: 20px;
+    border: 5px dashed red;
+}
+
+.apresentacao {
+    background-color: yellow;
+}
+
+.contador {
+    background-color: #00ffff;
+    text-align: center;
+}
+
+.aviso {
+    background-color: orange;
+}
+
+.ajuda {
+    background-color: pink;
+}
+
+.botao-caotico,
+.ajuda button {
+    padding: 15px;
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    border: 5px outset yellow;
+    cursor: pointer;
+}
+
+.texto-destaque {
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#contadorVisitantes {
+    font-size: 45px;
+    color: red;
+    font-weight: bold;
+}
+
+.rodape {
+    background-color: #000000;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.rodape-final {
+    color: yellow;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* =====================================
+   FORMULÁRIOS COMPLETAMENTE HORRÍVEIS
+   ===================================== */
+
+form {
+    padding: 15px;
+    background-color: #ff00ff;
+    border: 6px ridge lime;
+}
+
+form label {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select,
+form textarea {
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border: 4px dotted red;
+    background-color: yellow;
+    color: purple;
+    font-size: 16px;
+}
+
+form textarea {
+    width: 100%;
+    max-width: 600px;
+    resize: both;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: 5px dashed lime;
+    background-color: cyan;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    accent-color: red;
+    transform: scale(1.3);
+}
+/* =====================================
+   RESPONSIVIDADE (OU QUASE ISSO)
+   ===================================== */
+
+@media (max-width: 600px) {
+    .titulo-principal {
+        font-size: 36px;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    .texto-destaque {
+        font-size: 25px;
+    }
+
+    .menu a {
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .botao-caotico {
+        max-width: 100%;
+        font-size: 17px;
+    }
+}
+
+/* =====================================
+   HORRIBLE WEB 2000
+   IMAGENS E GIFS DECORATIVOS
+   ===================================== */
+
+/* LOGO */
+
+.logo-site {
+    display: block;
+    width: 380px;
+    max-width: 90%;
+    height: auto;
+    margin: 10px auto 20px;
+    border: 5px ridge yellow;
+    background-color: white;
+}
+
+/* IMAGENS DECORATIVAS */
+
+.imagem-decorativa {
+    display: inline-block;
+    width: 150px;
+    max-width: 40%;
+    height: auto;
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border: 4px dashed red;
+    vertical-align: middle;
+}
+
+/* GIFS DECORATIVOS */
+
+.gif-decorativo {
+    display: inline-block;
+    width: 110px;
+    max-width: 30%;
+    height: auto;
+    margin: 8px;
+    vertical-align: middle;
+}
+
+/* IMAGENS DOS PRODUTOS */
+
+.produto-imagem {
+    display: block;
+    width: 180px;
+    max-width: 90%;
+    height: 140px;
+    object-fit: contain;
+    margin: 12px auto;
+    padding: 5px;
+    background-color: white;
+    border: 5px dashed magenta;
+}
+
+/* SELOS DECORATIVOS */
+
+.selo-decorativo {
+    display: inline-block;
+    width: 120px;
+    max-width: 30%;
+    height: auto;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+/* IMAGEM DA PÁGINA SOBRE */
+
+.imagem-sobre {
+    display: block;
+    width: 260px;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    padding: 8px;
+    background-color: yellow;
+    border: 8px ridge blue;
+}
+
+/* ÍCONE DE CONTATO */
+
+.icone-contato {
+    width: 85px;
+    max-width: 25%;
+    height: auto;
+    vertical-align: middle;
+    margin: 8px;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 600px) {
+    .imagem-decorativa {
+        width: 110px;
+    }
+
+    .produto-imagem {
+        width: 150px;
+    }
+
+    .imagem-sobre {
+        width: 200px;
+    }
+
+    .gif-decorativo {
+        width: 85px;
+    }
+}
